@@ -1,0 +1,17 @@
+.disc-container{
+  margin: 50px;
+  svg{
+    circle{
+      width: 100%;
+      height: 100%;
+      color: black;
+    }
+  }
+  .disc-avatar{
+    img{
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+  }
+}
