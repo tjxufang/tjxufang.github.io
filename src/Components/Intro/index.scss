@@ -1,13 +1,12 @@
-.disc-container{
+.intro-container{
   margin: 50px;
-  svg{
-    circle{
-      width: 100%;
-      height: 100%;
-      color: black;
-    }
+  justify-content: space-around; // override
+  .intro-text{
+    line-height: 1.8;
+    width: 50%;
   }
-  .disc-avatar{
+  .intro-avatar{
+    align-self: center;
     img{
       width: 200px;
       height: 200px;

@@ -25,22 +25,22 @@ const Header = () => {
              style={{height: navOpen && '275px'}}
         >
             <div className="header row">
-                <div className="company-logo">
-                    <Link to={'/'}>
-                        <img src='logo-text-color.svg' alt="logo" width='200px'/>
-                    </Link>
-                </div>
+                {/*<div className="company-logo">*/}
+                {/*    <Link to={'/'}>*/}
+                {/*        <img src='logo-text-color.svg' alt="logo" width='200px'/>*/}
+                {/*    </Link>*/}
+                {/*</div>*/}
                 <div className="navigation-container">
                     <NavItems viewFrom="header"/>
                 </div>
-                <div className="sys-btn-container">
-                    <Link to={"/contact"}>
-                        <div className="sys-btn row">
-                            <img src="assets/star.svg" alt="star"/>
-                            <div>Shoot Your Star</div>
-                        </div>
-                    </Link>
-                </div>
+                {/*<div className="sys-btn-container">*/}
+                {/*    <Link to={"/contact"}>*/}
+                {/*        <div className="sys-btn row">*/}
+                {/*            <img src="assets/star.svg" alt="star"/>*/}
+                {/*            <div>Shoot Your Star</div>*/}
+                {/*        </div>*/}
+                {/*    </Link>*/}
+                {/*</div>*/}
 
                 <div className="side-nav-icon">
                     <span onClick={toggleNav}>&#9776;</span>

@@ -1,25 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import Homepage from 'Views/Homepage';
+import ScrollToTop from 'Utils/ScrollToTop';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import {CSSTransition, TransitionGroup} from 'react-transition-group';
+import Header from 'Components/Layout/Header';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <BrowserRouter>
+                <ScrollToTop/>
+                <Header/>
+                <Route render={({location}) => (
+                    <TransitionGroup>
+                        <CSSTransition
+                            key={location.key}
+                            classNames="fade"
+                            timeout={300}>
+                            <Switch>
+                                <Route path="/" exact component={Homepage}/>
+                                {/*<Route path="/about" exact component={About}/>*/}
+                                {/*<Route path="/projects" exact component={Work}/>*/}
+                                {/*<Route path="/careers" exact component={Careers}/>*/}
+                                {/*<Route path="/contact" exact component={Contact}/>*/}
+                                {/*<Route path="/Terms" exact component={Terms}/>*/}
+                            </Switch>
+                        </CSSTransition>
+                    </TransitionGroup>
+                )}/>
+                {/*<Footer/>*/}
+            </BrowserRouter>
+        </div>
+    );
 }
 
 export default App;
