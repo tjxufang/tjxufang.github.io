@@ -1,7 +1,8 @@
 .main-btn-container{
   button{
-    background-color: black;
-    border: 1px solid white;
+    background-color: #424242;
+    border: none;
+    border-radius: 2px;
     color: white;
     padding: 18px;
     font-size: 18px;
@@ -11,8 +12,7 @@
 
 .main-btn-container{
   button:hover{
-    color: black;
-    background-color: white;
+    opacity: 0.9;
   }
   button:active{
     transform: scale(1.03);

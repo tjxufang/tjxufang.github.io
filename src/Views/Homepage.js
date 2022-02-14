@@ -1,6 +1,6 @@
 import React from 'react';
 import './Homepage.scss'
-import Intro from 'Components/Intro';
+import Intro from 'Components/Intro/Intro';
 
 const Homepage = () => {
     return (

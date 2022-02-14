@@ -1,9 +1,11 @@
 import './App.css';
-import Homepage from 'Views/Homepage';
 import ScrollToTop from 'Utils/ScrollToTop';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import {CSSTransition, TransitionGroup} from 'react-transition-group';
 import Header from 'Components/Layout/Header';
+import Footer from 'Components/Layout/Footer';
+import Homepage from 'Views/Homepage';
+import About from 'Views/About';
 
 function App() {
     return (
@@ -19,7 +21,7 @@ function App() {
                             timeout={300}>
                             <Switch>
                                 <Route path="/" exact component={Homepage}/>
-                                {/*<Route path="/about" exact component={About}/>*/}
+                                <Route path="/about" exact component={About}/>
                                 {/*<Route path="/projects" exact component={Work}/>*/}
                                 {/*<Route path="/careers" exact component={Careers}/>*/}
                                 {/*<Route path="/contact" exact component={Contact}/>*/}
@@ -28,7 +30,7 @@ function App() {
                         </CSSTransition>
                     </TransitionGroup>
                 )}/>
-                {/*<Footer/>*/}
+                <Footer/>
             </BrowserRouter>
         </div>
     );
