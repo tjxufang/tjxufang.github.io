@@ -28,6 +28,9 @@
   margin: 40px auto;
 }
 
+button{
+  font-family: 'Shizuru', cursive;
+}
 /*.App-logo {*/
 /*  height: 40vmin;*/
 /*  pointer-events: none;*/

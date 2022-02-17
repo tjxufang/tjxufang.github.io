@@ -3,6 +3,7 @@ import './Footer.scss'
 import NavItems from "./Helpers/NavItems";
 import {ProjectLinks, SocialMediaLinks} from "Utils/constants";
 import {Link} from "react-router-dom";
+import RedirectButton from 'Components/UI/RedirectButton/RedirectButton';
 
 const Footer = () => {
 
@@ -13,11 +14,12 @@ const Footer = () => {
                     <div className="footer-left col">
                         <div className="footer-social-media-container">
                             Social Media:
-                            <div className="footer-social-media-icons">
-                                <a href={SocialMediaLinks.LinkedIn} target="_blank" rel="noreferrer">
-                                    <img src="assets/icons/linkedin.png" alt="loading"/>
-                                </a>
-                            </div>
+                            {/*<div className="footer-social-media-icons">*/}
+                            {/*    <a href={SocialMediaLinks.LinkedIn} target="_blank" rel="noreferrer">*/}
+                            {/*        <img src="assets/icons/linkedin.png" alt="loading"/>*/}
+                            {/*    </a>*/}
+                            {/*</div>*/}
+                            <RedirectButton link={SocialMediaLinks.LinkedIn}>LinkedIn</RedirectButton>
                         </div>
                     </div>
                     <div className="footer-right row">
