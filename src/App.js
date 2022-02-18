@@ -6,6 +6,7 @@ import Header from 'Components/Layout/Header';
 import Footer from 'Components/Layout/Footer';
 import Homepage from 'Views/Homepage';
 import About from 'Views/About';
+import Contact from 'Views/Contact';
 
 function App() {
     return (
@@ -18,13 +19,13 @@ function App() {
                         <CSSTransition
                             key={location.key}
                             classNames="fade"
-                            timeout={300}>
+                            timeout={500}>
                             <Switch>
                                 <Route path="/" exact component={Homepage}/>
                                 <Route path="/about" exact component={About}/>
                                 {/*<Route path="/projects" exact component={Work}/>*/}
                                 {/*<Route path="/careers" exact component={Careers}/>*/}
-                                {/*<Route path="/contact" exact component={Contact}/>*/}
+                                <Route path="/contact" exact component={Contact}/>
                                 {/*<Route path="/Terms" exact component={Terms}/>*/}
                             </Switch>
                         </CSSTransition>

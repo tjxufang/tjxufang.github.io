@@ -3,8 +3,8 @@ import './Contact.scss';
 
 const Contact = () => {
     return (
-        <div>
-
+        <div className="contact-container view-container">
+            contact page
         </div>
     );
 };

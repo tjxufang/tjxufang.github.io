@@ -5,7 +5,7 @@ const RedirectButton = ({children, link}) => {
     const onClick = () => {
         window.open(
             link,
-            '_blank' // <- This is what makes it open in a new window.
+            '_blank'
         );
     }
     return (

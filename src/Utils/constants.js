@@ -3,7 +3,8 @@ export const LocalStorageItems = {
 }
 
 export const SocialMediaLinks = {
-    LinkedIn: 'https://www.linkedin.com/in/fangxu1/'
+    LinkedIn: 'https://www.linkedin.com/in/fangxu1/',
+    Email: 'mailto:tjxufang@gmail.com'
 }
 
 export const ProjectLinks = {

@@ -25,12 +25,12 @@ const NavItems = ({viewFrom}) => {
                     borderRadius: '5px',
                 }}>About</span>
             </Link>
-            <Link to={"/projects"}>
+            <Link to={"/contact"}>
                 <span style={{
-                    background: ('/projects' === location.pathname && viewFrom!=='footer') ? 'linear-gradient(to left, #f69ec4, #f9dd94 100%)' : 'none',
-                    backgroundPosition: ('/projects' === location.pathname && viewFrom!=='footer') ? '0 100%' : '',
-                    backgroundSize: ('/projects' === location.pathname && viewFrom!=='footer') ? '100% 2px' : '',
-                    backgroundRepeat: ('/projects' === location.pathname && viewFrom!=='footer') ? 'repeat-x' : '',
+                    background: ('/contact' === location.pathname && viewFrom!=='footer') ? 'linear-gradient(to left, #f69ec4, #f9dd94 100%)' : 'none',
+                    backgroundPosition: ('/contact' === location.pathname && viewFrom!=='footer') ? '0 100%' : '',
+                    backgroundSize: ('/contact' === location.pathname && viewFrom!=='footer') ? '100% 2px' : '',
+                    backgroundRepeat: ('/contact' === location.pathname && viewFrom!=='footer') ? 'repeat-x' : '',
                     borderRadius: '5px',
                 }}>Contact</span>
             </Link>
