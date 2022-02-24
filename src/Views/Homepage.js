@@ -5,7 +5,7 @@ import Intro from 'Components/Intro/Intro';
 const Homepage = () => {
     return (
         <div className="homepage-container view-container">
-            <div className="homepage-intro">
+            <div className="homepage-intro-area">
                 <Intro/>
             </div>
         </div>

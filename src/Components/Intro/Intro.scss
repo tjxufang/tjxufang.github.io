@@ -3,9 +3,10 @@
   justify-content: space-around; // override
   .intro-text{
     line-height: 1.8;
-    width: 50%;
+    width: 40%;
     .intro-typewriter {
-      height: 70px;
+      font-size: 22px;
+      height: 150px;
     }
   }
   .intro-avatar{

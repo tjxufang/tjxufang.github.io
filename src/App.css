@@ -1,8 +1,12 @@
 .App {
-  text-align: center;
+  /*text-align: center;*/
   background-color: #121212;
   color: white;
   /*cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.png"), auto;*/
+}
+
+a{
+  text-decoration: none;
 }
 
 .view-container{
