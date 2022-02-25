@@ -11,34 +11,30 @@
     height: 75px;
     .company-logo{
       align-self: center;
-      padding-top: 12px;
     }
 
-    .sys-btn-container{
-      align-self: center;
-      a {
-        text-decoration: none;
-      }
-      .sys-btn{
-        background: linear-gradient(90deg, #4A2258 -0.19%, #765EAB 99.81%);
-        height: 45px;
-        width: 160px;
-        border-radius: 25px;
-        padding: 0 20px;
-        transition: all 500ms linear;
-        img{
-          width: 25px;
-        }
-        div{
-          color: white;
-          font-weight: 600;
-          align-self: center;
-        }
-      }
-      .sys-btn:hover{
-        opacity: 0.8;
-      }
-    }
+    //.sys-btn-container{
+    //  align-self: center;
+    //  .sys-btn{
+    //    background: linear-gradient(90deg, #4A2258 -0.19%, #765EAB 99.81%);
+    //    height: 45px;
+    //    width: 160px;
+    //    border-radius: 25px;
+    //    padding: 0 20px;
+    //    transition: all 500ms linear;
+    //    img{
+    //      width: 25px;
+    //    }
+    //    div{
+    //      color: white;
+    //      font-weight: 600;
+    //      align-self: center;
+    //    }
+    //  }
+    //  .sys-btn:hover{
+    //    opacity: 0.8;
+    //  }
+    //}
     .side-nav-icon{// icon
       display: none;
       margin: 10px 0 10px;
@@ -62,7 +58,6 @@
       color: white;
       background: linear-gradient(90deg, #3D2258 -0.19%, #111422 99.81%);
       border-top: .5px solid #DEDEDE;
-      text-decoration: none;
       text-align: center;
       padding-top: 7px;
     }
@@ -83,7 +78,6 @@
   font-weight: 500;
   font-size: 18px;
   a{
-    text-decoration: none;
     color: white;
     transition: all 200ms linear;
   }

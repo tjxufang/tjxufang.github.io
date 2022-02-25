@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './Header.scss'
 import NavItems from "Components/Layout/Helpers/NavItems";
+import {Link} from 'react-router-dom';
 
 const Header = () => {
     const [navOpen, setNavOpen] = useState(false)
@@ -24,11 +25,11 @@ const Header = () => {
              style={{height: navOpen && '275px'}}
         >
             <div className="header row">
-                {/*<div className="company-logo">*/}
-                {/*    <Link to={'/'}>*/}
-                {/*        <img src='logo-text-color.svg' alt="logo" width='200px'/>*/}
-                {/*    </Link>*/}
-                {/*</div>*/}
+                <div className="company-logo">
+                    <Link to={'/'}>
+                        <img src='/assets/fx-logo-dark.png' alt="logo" width='50px'/>
+                    </Link>
+                </div>
                 <div className="navigation-container">
                     <NavItems viewFrom="header"/>
                 </div>
