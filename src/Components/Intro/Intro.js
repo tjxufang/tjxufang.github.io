@@ -7,6 +7,7 @@ import {Link} from 'react-router-dom';
 const Intro = () => {
     return (
         <div className="intro-container row">
+            <div className="intro-background"/>
             <div className="intro-text">
                 <h1>
                     Hello there!

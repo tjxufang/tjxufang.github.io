@@ -29,6 +29,7 @@ const Header = () => {
                     <Link to={'/'}>
                         <img src='/assets/fx-logo-dark.png' alt="logo" width='50px'/>
                     </Link>
+                    Fang Xu
                 </div>
                 <div className="navigation-container">
                     <NavItems viewFrom="header"/>

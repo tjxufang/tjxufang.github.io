@@ -1,16 +1,30 @@
 .intro-container{
   margin: 50px;
   justify-content: space-around; // override
+  position: relative;
+  .intro-background{
+    position: absolute;
+    top: -30%;
+    width: 700px;
+    height: 700px;
+    opacity: 0.3;
+    //border: 15px solid #8e8d8a;
+    background-color: #8e8d8a;
+    border-radius: 50%;
+    z-index: 1;
+  }
   .intro-text{
     line-height: 1.8;
     width: 40%;
+    z-index: 10;
     .intro-typewriter {
-      font-size: 22px;
+      font-size: 25px;
       height: 150px;
     }
   }
   .intro-avatar{
     align-self: center;
+    z-index: 10;
     img{
       width: 300px;
       height: 300px;
