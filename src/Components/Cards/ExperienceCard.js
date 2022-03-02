@@ -1,7 +1,7 @@
 import React from 'react';
 import 'Components/Cards/ExperienceCard.scss'
 
-const ExperienceCard = ({title, color, description, logoSrc, imgSrc, children, orientation="right"}) => {
+const ExperienceCard = ({title, color, subtitle, logoSrc, imgSrc, children, orientation="right"}) => {
     return (
         <div className="detailed-project-card-container row">
             {orientation === "right" &&
@@ -17,7 +17,7 @@ const ExperienceCard = ({title, color, description, logoSrc, imgSrc, children, o
                     <img src={logoSrc} alt="loading"/>
                     <h2 style={{margin: 0, marginLeft: '15px', color: color}}>{title}</h2>
                 </div>
-                <h4 style={{margin: 0}}>{description}</h4>
+                <h4 style={{margin: 0}}>{subtitle}</h4>
                 {children}
             </div>
             {orientation === "left" &&
