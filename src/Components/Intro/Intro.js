@@ -10,10 +10,7 @@ const Intro = () => {
             <div className="intro-background"/>
             <div className="intro-text">
                 <h1>
-                    Hello there!
-                </h1>
-                <h1>
-                    Welcome to my page!
+                    Hello there! Welcome to my page!
                 </h1>
                 <div className="intro-typewriter">
                     <Typewriter
@@ -21,19 +18,21 @@ const Intro = () => {
                             // strings: ['Hello', 'World!'],
                             autoStart: true,
                             // loop: true,
-                            delay: 50,
+                            delay: 30,
                         }}
                         onInit={(typewriter)=> {
                             typewriter
                                 .typeString("My name is <strong>Fang Xu</strong>. ")
-                                .pauseFor(700)
+                                .pauseFor(500)
                                 .typeString("I am a <strong>full-stack developer</strong>. ")
-                                .pauseFor(700)
+                                .pauseFor(500)
                                 .typeString("I am into <strong>music</strong> and great <strong>designs</strong>, ")
                                 // .deleteChars(9)
                                 // .typeString("UX designer")
-                                .pauseFor(1000)
-                                .typeString("and I enjoy <strong>life</strong>.")
+                                .pauseFor(500)
+                                .typeString("and I enjoy <strong>life</strong>. ")
+                                .pauseFor(500)
+                                .typeString("<br/>Thank you for visiting!")
                                 // .deleteAll()
                                 .start();
                         }}

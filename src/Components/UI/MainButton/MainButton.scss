@@ -5,12 +5,15 @@
   color: white;
   padding: 18px;
   font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 2px;
   cursor: pointer;
   font-family: inherit;
+  transition: all 200ms linear;
 }
 
 .main-button:hover {
-  opacity: 0.9;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .main-button:active {

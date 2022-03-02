@@ -2,6 +2,7 @@ import React from 'react';
 import './Footer.scss'
 import {SocialMediaLinks} from "Utils/constants";
 import RedirectButton from 'Components/UI/RedirectButton/RedirectButton';
+import {FooterStrings} from 'Utils/Strings';
 
 const Footer = () => {
 
@@ -18,14 +19,14 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="footer-right row">
-                        <div>
-                            Designed, developed, and maintained by Fang Xu
+                        <div className="banner">
+                            {FooterStrings.Banner}
                         </div>
                     </div>
                 </div>
                 <div className="footer-bottom">
                     <div className="footer-bottom-content">
-                        <p>2022 &copy; Fang Xu | v0.0.1</p>
+                        <p>{FooterStrings.Bottom}</p>
                     </div>
                 </div>
             </div>

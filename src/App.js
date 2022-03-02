@@ -23,10 +23,7 @@ function App() {
                             <Switch>
                                 <Route path="/" exact component={Homepage}/>
                                 <Route path="/about" exact component={About}/>
-                                {/*<Route path="/projects" exact component={Work}/>*/}
-                                {/*<Route path="/careers" exact component={Careers}/>*/}
                                 <Route path="/contact" exact component={Contact}/>
-                                {/*<Route path="/Terms" exact component={Terms}/>*/}
                             </Switch>
                         </CSSTransition>
                     </TransitionGroup>

@@ -25,11 +25,13 @@ const Header = () => {
              style={{height: navOpen && '275px'}}
         >
             <div className="header row">
-                <div className="company-logo">
+                <div className="company-logo row">
                     <Link to={'/'}>
                         <img src='/assets/fx-logo-dark.png' alt="logo" width='50px'/>
                     </Link>
-                    Fang Xu
+                    <div className="company-logo-text flex-center">
+                        Fang Xu
+                    </div>
                 </div>
                 <div className="navigation-container">
                     <NavItems viewFrom="header"/>
