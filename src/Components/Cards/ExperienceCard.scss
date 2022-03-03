@@ -1,27 +1,31 @@
-.detailed-project-card-container{
+.experience-card-container{
   margin: 50px auto;
+  transition: all 100ms linear;
+  background-color: beige;
   box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
-  .detailed-project-card-text{
-    padding: 55px;
+  .experience-card-text{
+    padding: 25px 45px;
     width: 50%;
     .card-heading{
-      justify-content: flex-start;
-      img{
-        width: 50px;
-        height: 40px;
-        align-self: center;
+      h1{
+        margin: 0;
       }
-      h2{
-        margin-left: 20px;
+      h3{
+        margin: 0;
+        color: grey;
       }
     }
-    .detailed-project-card-links{
-      a{
-        margin-right: 25px;
-      }
+    .card-content{
+      color: black;
+      font-weight: 600;
     }
+    //.detailed-project-card-links{
+    //  a{
+    //    margin-right: 25px;
+    //  }
+    //}
   }
-  .detailed-project-card-picture{
+  .experience-card-picture{
     width: 45%;
     img{
       width: 100%;
@@ -29,19 +33,23 @@
       object-fit: cover;
     }
   }
-  .detailed-project-card-responsive-design{
+  .experience-card-responsive-design{
     display: none;
   }
 }
 
+.experience-card-container:hover{
+  transform: scale(1.008);
+}
+
 @media only screen and (max-width: 850px) {
-  .detailed-project-card-container{
+  .experience-card-container{
     flex-direction: column;
-    .detailed-project-card-text{
+    .experience-card-text{
       padding: 15px 0;
       width: 90%;
       margin: auto;
-      .detailed-project-card-links{
+      .experience-card-links{
         a{
           justify-content: center;
           align-items: center;
@@ -51,11 +59,11 @@
         }
       }
     }
-    .detailed-project-card-picture{
+    .experience-card-picture{
       display: none;
       width: 100%;
     }
-    .detailed-project-card-responsive-design{
+    .experience-card-responsive-design{
       display: block;
     }
   }

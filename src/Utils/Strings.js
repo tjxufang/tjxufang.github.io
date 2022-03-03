@@ -1,26 +1,23 @@
 export const AboutStrings = [
     {
-        title: "Background",
-        subtitle: "2015-2020",
-        color: "blue",
-        imgSrc: "assets/about/QU.jpeg",
-        logoSrc: "assets/about/QU.jpeg",
-        detail: "Graduated from Queen's University"
-    },
-    {
         title: "Queen's University",
         subtitle: "2015-2020",
-        color: "blue",
+        color: "#11335d",
         imgSrc: "assets/about/QU.jpeg",
-        logoSrc: "assets/about/QU.jpeg",
         detail: "Graduated from Queen's University"
     },
     {
-        title: "Experiences",
+        title: "Project Experiences",
         subtitle: "2015-2020",
-        color: "blue",
+        color: "slateblue",
         imgSrc: "assets/about/QU.jpeg",
-        logoSrc: "assets/about/QU.jpeg",
+        detail: "Includes my startup experiences, also built my entrepreneurship"
+    },
+    {
+        title: "Work Experiences",
+        subtitle: "2015-2020",
+        color: "#181c12",
+        imgSrc: "assets/about/QU.jpeg",
         detail: "Experiences include multiple admin panels with data analytics and visualizations"
     }
 ]

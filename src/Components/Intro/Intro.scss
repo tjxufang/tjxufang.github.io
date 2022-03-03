@@ -4,7 +4,7 @@
   position: relative;
   .intro-background{
     position: absolute;
-    top: -40%;
+    top: -35%;
     width: 700px;
     height: 700px;
     opacity: 0.3;
@@ -16,7 +16,7 @@
   }
   .intro-text{
     line-height: 1.8;
-    width: 40%;
+    width: 50%;
     z-index: 10;
     .intro-typewriter {
       font-size: 25px;
