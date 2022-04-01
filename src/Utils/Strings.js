@@ -11,14 +11,14 @@ export const AboutStrings = [
         subtitle: "2015-2020",
         color: "slateblue",
         imgSrc: "assets/about/QU.jpeg",
-        detail: "Includes my startup experiences, also built my entrepreneurship"
+        detail: "Includes my startup experiences, also built my entrepreneurship, and the way i think"
     },
     {
         title: "Work Experiences",
         subtitle: "2015-2020",
         color: "#181c12",
         imgSrc: "assets/about/QU.jpeg",
-        detail: "Experiences include multiple admin panels with data analytics and visualizations"
+        detail: "Experiences include multiple admin panels with data analytics and visualizations, understands startup difficulties"
     }
 ]
 
