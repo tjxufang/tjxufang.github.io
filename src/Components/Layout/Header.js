@@ -24,6 +24,9 @@ const Header = () => {
         <div className="header-container"
              style={{height: navOpen && '275px'}}
         >
+            <div className="thumbnail">
+                <img src="/assets/fx-logo.png" alt="thumbnail"/>
+            </div>
             <div className="header row">
                 <div className="company-logo row">
                     <Link to={'/'}>

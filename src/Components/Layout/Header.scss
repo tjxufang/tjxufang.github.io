@@ -3,6 +3,18 @@
   height: 75px;
   background-color: #1f1f1e;
   transition: all 0.3s ease-in-out;
+  .thumbnail{
+    position : absolute;
+    top : 0;
+    z-index : -5000;
+    width : 0;
+    height : 0;
+    img {
+      object-fit: cover;
+      width: 0;
+      height: 0;
+    }
+  }
   .header{
     //max-width: 1200px;
     width: 80%;
