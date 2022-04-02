@@ -23,6 +23,6 @@ export const AboutStrings = [
 ]
 
 export const FooterStrings = {
-    Banner: 'DESIGN, DEVELOPED, AND MAINTAINED BY FANG XU',
+    Banner: 'DESIGNED, DEVELOPED, AND MAINTAINED BY FANG XU',
     Bottom: '2022 © Fang Xu | v0.1.1'
 }
