@@ -1,27 +1,33 @@
 export const AboutStrings = [
     {
-        title: "Queen's University",
+        title: "Education Background",
         subtitle: "2015-2020",
         color: "#11335d",
-        imgSrc: "assets/about/QU.jpeg",
+        imgSrc: "assets/about/Education.jpeg",
         detail: [
             "Graduated from Queen's University in 2020, with a bachelor's degree in Computer Science (specialized in Software Design) and a Certificate in Business.",
-            "My graduation project was to build an intuitive and user-friendly web app for Queen's Psychology Clinic to replace the legacy system and accelerated the process of securely gathering patient-entered data for further clinical analysis and other effectiveness evaluations."
+            "My graduation project was to build an intuitive and user-friendly web app for Queen's Psychology Clinic to replace the legacy system and accelerated the process of securely gathering patient-entered data for clinical analysis and other evaluations."
         ]
     },
     {
-        title: "Project Experiences",
-        subtitle: "2015-2020",
+        title: "Project Experience",
+        subtitle: "2019-2020",
         color: "slateblue",
-        imgSrc: "assets/about/QU.jpeg",
-        detail: ["Includes my startup experiences, also built my entrepreneurship, and the way i think"]
+        imgSrc: "assets/about/Project.jpg",
+        detail: [
+            "Other than my graduation project, I am also a co-founder of a for-profit gaming community on discord. We successfully hosted many weekly tournaments which include prizes, game reports & replays, and even commentators. Many have created dependency, and some used it as a tool to team up with preferable gamers, and discuss game news.",
+            "In addition, I am also proud to be the co-founder of a recycling team for the communities back in my hometown Tianjin. We have reached more than 50kg of recyclables per community monthly and significantly improved the local recycling situation and living standards. These experience built my entrepreneurship, and changed the way I think."
+        ]
     },
     {
-        title: "Work Experiences",
-        subtitle: "2015-2020",
+        title: "Professional Experience",
+        subtitle: "2020-Present",
         color: "#181c12",
-        imgSrc: "assets/about/QU.jpeg",
-        detail: ["Experiences include multiple admin panels with data analytics and visualizations, understands startup difficulties"]
+        imgSrc: "assets/about/Profession.jpg",
+        detail: [
+            "Coming soon...",
+            ""
+        ]
     }
 ]
 

@@ -13,9 +13,11 @@ const Footer = () => {
                     <div className="footer-left col">
                         <div className="footer-link-container col">
                             <RedirectButton link={SocialMediaLinks.LinkedIn}>LinkedIn</RedirectButton>
+                            <RedirectButton link={SocialMediaLinks.GitHub}>GitHub</RedirectButton>
                             <RedirectButton link={SocialMediaLinks.Email}>Email</RedirectButton>
                             <br/>
-                            <RedirectButton>Back to top</RedirectButton>
+                            <RedirectButton isScrollingTop>Back to top</RedirectButton>
+                            <RedirectButton isSharing>Copy Link</RedirectButton>
                         </div>
                     </div>
                     <div className="footer-right row">

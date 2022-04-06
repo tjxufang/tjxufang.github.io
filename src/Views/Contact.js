@@ -4,7 +4,7 @@ import './Contact.scss';
 const Contact = () => {
     return (
         <div className="contact-container view-container">
-            contact page
+            <div style={{textAlign: 'center', marginTop: '30%'}}>Coming soon...</div>
         </div>
     );
 };

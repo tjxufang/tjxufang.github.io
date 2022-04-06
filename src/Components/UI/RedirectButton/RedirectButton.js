@@ -1,10 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './RedirectButton.scss'
 
-const RedirectButton = ({children, link}) => {
+const RedirectButton = ({children, link, isSharing, isScrollingTop}) => {
     const onClick = () => {
-        if (!link){ // back to top
-            window.scrollTo({top: 0, left: 0, behavior: 'smooth' })
+        if (isScrollingTop) { // back to top
+            window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
+        } else if (isSharing) {
+            navigator.clipboard.writeText(window.location.href)
         } else {
             window.open(
                 link,
@@ -12,6 +14,7 @@ const RedirectButton = ({children, link}) => {
             );
         }
     }
+
     return (
         <button className="redirect-button" onClick={onClick}>
             <div className="row">
@@ -20,10 +23,14 @@ const RedirectButton = ({children, link}) => {
                     <div className="redirect-button-icon">
                         &#8599;
                     </div>
-                    :
-                    <div className="redirect-button-icon" style={{marginRight: '4px'}}>
-                        &#8593;
-                    </div>
+                    : isScrollingTop ?
+                        <div className="redirect-button-icon" style={{marginRight: '4px'}}>
+                            &#8593;
+                        </div>
+                        :
+                        <div className="redirect-button-icon" style={{marginTop: '4px'}}>
+                            &#9829;
+                        </div>
                 }
             </div>
         </button>
