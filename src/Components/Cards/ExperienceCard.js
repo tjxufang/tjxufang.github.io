@@ -17,9 +17,11 @@ const ExperienceCard = ({title, color, subtitle, imgSrc, children, orientation="
                     <h1 style={{color: color}}>{title}</h1>
                     <h3>{subtitle}</h3>
                 </div>
-                <div className="card-content">
-                    {children}
-                </div>
+                {children?.map((para, i)=>
+                    <div className="card-content" key={i}>
+                        {para}
+                    </div>
+                )}
             </div>
             {orientation === "left" &&
             <div className="experience-card-picture">

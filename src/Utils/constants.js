@@ -1,3 +1,5 @@
+export const isProdEnv = process.env.NODE_ENV
+
 export const LocalStorageItems = {
     Token : "token",
 }
