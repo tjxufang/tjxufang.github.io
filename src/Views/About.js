@@ -2,29 +2,22 @@ import React from 'react';
 import './About.scss';
 import ExperienceCard from 'Components/Cards/ExperienceCard';
 import {AboutStrings} from 'Utils/Strings';
-import {isProdEnv} from 'Utils/constants';
 
 const About = () => {
     return (
         <div className="about-container view-container">
-            {isProdEnv === "development" ?
-                <>
-                    {AboutStrings?.map((item, i) =>
-                        <ExperienceCard
-                            orientation={i % 2 === 0 ? 'left' : 'right'}
-                            title={item.title}
-                            color={item.color}
-                            subtitle={item.subtitle}
-                            imgSrc={item.imgSrc}
-                            key={i}
-                        >
-                            {item.detail}
-                        </ExperienceCard>
-                    )}
-                </>
-                :
-                <div style={{textAlign: 'center', marginTop: '30%'}}>Coming soon...</div>
-            }
+            {AboutStrings?.map((item, i) =>
+                <ExperienceCard
+                    orientation={i % 2 === 0 ? 'left' : 'right'}
+                    title={item.title}
+                    color={item.color}
+                    subtitle={item.subtitle}
+                    imgSrc={item.imgSrc}
+                    key={i}
+                >
+                    {item.detail}
+                </ExperienceCard>
+            )}
         </div>
     );
 };

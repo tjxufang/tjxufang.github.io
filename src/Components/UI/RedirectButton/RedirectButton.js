@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './RedirectButton.scss'
 
-const RedirectButton = ({children, link, isSharing, isScrollingTop}) => {
+const RedirectButton = ({children, link, isSharing, isScrollingTop, disabled}) => {
     const onClick = () => {
         if (isScrollingTop) { // back to top
             window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
@@ -16,7 +16,7 @@ const RedirectButton = ({children, link, isSharing, isScrollingTop}) => {
     }
 
     return (
-        <button className="redirect-button" onClick={onClick}>
+        <button className="redirect-button" onClick={onClick} disabled={disabled}>
             <div className="row">
                 {children}
                 {link ?

@@ -1,10 +1,11 @@
 import React from 'react';
 import './Contact.scss';
+import {isProdEnv} from 'Utils/constants';
 
 const Contact = () => {
     return (
         <div className="contact-container view-container">
-            <div style={{textAlign: 'center', marginTop: '30%'}}>Coming soon...</div>
+            {isProdEnv==="production" && <div style={{textAlign: 'center', marginTop: '30%'}}>Coming soon...</div>}
         </div>
     );
 };

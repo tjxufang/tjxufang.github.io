@@ -20,6 +20,10 @@
   }
 }
 
+.redirect-button:disabled{
+  color: grey;
+}
+
 .redirect-button:active {
   transform: scale(1.03);
 }
