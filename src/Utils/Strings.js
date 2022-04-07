@@ -6,7 +6,7 @@ export const AboutStrings = [
         imgSrc: "assets/about/Education.jpeg",
         detail: [
             "Graduated from Queen's University in 2020, with a bachelor's degree in Computer Science (specialized in Software Design) and a Certificate in Business.",
-            "My graduation project was to build an intuitive and user-friendly web app for Queen's Psychology Clinic to replace the legacy system and accelerated the process of securely gathering patient-entered data for clinical analysis and other evaluations."
+            "My graduation project was to build an intuitive and user-friendly web app for Queen's Psychology Clinic using the Angular framework. We replaced the legacy system and accelerated the process of securely gathering patient-entered data for clinical analysis and other evaluations. "
         ]
     },
     {
@@ -25,8 +25,8 @@ export const AboutStrings = [
         color: "#181c12",
         imgSrc: "assets/about/Profession.jpg",
         detail: [
-            "Coming soon...",
-            ""
+            "I worked as a full-stack developer at Mark2Win and was responsible to develop web applications using the React framework based on our customers’ requirements. Our customers are in a variety of industries, such as, e-commerce, educational institutions, and law firms.",
+            "Then, after that, I decided to join a start-up tech company Infinomial, to truly utilize what I learned from my previous startup experience. I was also provided with the opportunity to develop independently, and to build my leadership by leading the frontend development team to develop apps in a larger scale."
         ]
     }
 ]
