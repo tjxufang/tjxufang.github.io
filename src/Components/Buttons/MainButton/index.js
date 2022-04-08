@@ -1,5 +1,5 @@
 import React from 'react';
-import './MainButton.scss'
+import './index.scss'
 
 const MainButton = ({children}) => {
     return (

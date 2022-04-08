@@ -1,5 +1,5 @@
 import React from 'react';
-import './RedirectButton.scss'
+import './index.scss'
 
 const RedirectButton = ({children, link, isSharing, isScrollingTop, disabled}) => {
     const onClick = () => {

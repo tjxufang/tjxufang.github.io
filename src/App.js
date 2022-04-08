@@ -7,8 +7,20 @@ import Footer from 'Components/Layout/Footer';
 import Homepage from 'Views/Homepage';
 import About from 'Views/About';
 import Contact from 'Views/Contact';
+import {useSelector} from 'react-redux';
+import {useSnackbar} from 'notistack';
+import {useEffect} from 'react';
 
 function App() {
+    // detecting warning banner
+    const {enqueueSnackbar} = useSnackbar();
+    const banner = useSelector(state => state.bannerReducer?.banner)
+    useEffect(() => {
+        if (banner) {
+            enqueueSnackbar(banner.string, {variant: banner.type})
+        }
+    }, [banner, enqueueSnackbar])
+
     return (
         <div className="App">
             <BrowserRouter>
