@@ -4,6 +4,8 @@
   .contact-form{
     padding: 0 15px;
     .heading{
+      width: 80%;
+      margin: auto;
       p{
         text-align: center;
       }
@@ -20,28 +22,31 @@
       input{
         border: 1px solid #DBDBDB;
         width: 90%;
-        margin: auto;
+        //margin: auto;
         height: 40px;
         font-size: 20px;
         padding: 0 10px;
+        outline: none;
+        background: beige;
       }
       textarea{
         border: 1px solid #DBDBDB;
+        background: beige;
         height: 30vh;
-        font-size: 16px;
-        font-family: inherit;
+        font-size: 20px;
+        font-family: sans-serif;
         padding: 10px;
         resize: none;
         outline: none;
         width: 95%;
-        margin: auto;
+        //margin: auto;
       }
       .error-message{
         position: absolute;
         bottom: -25px;
 
-        font-size: 12px;
-        color: #5985ce;
+        font-size: 18px;
+        color: snow;
       }
     }
   }

@@ -4,6 +4,7 @@ import './ContactForm.scss'
 import MainButton from "Components/Buttons/MainButton";
 import {actUploadContactForm} from "Redux/actions";
 import {useDispatch} from "react-redux";
+import {ContactStrings} from 'Utils/Strings';
 
 const ContactForm = () => {
     const dispatch = useDispatch()
@@ -20,14 +21,14 @@ const ContactForm = () => {
         <div className="contact-form-container">
             <form onSubmit={handleSubmit(onSubmit)} className="contact-form">
                 <div className="heading">
-                    <p>Submit your message and we'll get back to you ASAP.</p>
+                    <p>{ContactStrings.Intro}</p>
                 </div>
                 <div className="basic-contact row">
                     <div className="field col">
                         <span>Name: *</span>
                         <input id="name" type="name" {...register("nickName", {required: true, maxLength: 20})}/>
                         {errors.nickName && errors.nickName.type === "required" &&
-                        <span className="error-message">We'd like to know your name!</span>}
+                        <span className="error-message">I'd like to know your name!</span>}
                         {errors.nickName && errors.nickName.type === "maxLength" &&
                         <span className="error-message">Ops! We think your name is too long!</span>}
                     </div>

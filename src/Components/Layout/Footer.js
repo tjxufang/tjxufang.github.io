@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import './Footer.scss'
-import {SocialMediaLinks} from "Utils/constants";
+import {BannerTexts, SocialMediaLinks} from "Utils/constants";
 import Index from 'Components/Buttons/RedirectButton';
 import {FooterStrings} from 'Utils/Strings';
 import {useDispatch} from 'react-redux';
@@ -31,7 +31,7 @@ const Footer = () => {
 
     const handleCopyLink = () => {
         setIsCopied(true)
-        dispatch(triggerBanner("copied", 'info'))
+        dispatch(triggerBanner(BannerTexts.CopyLink, 'success'))
     }
 
     return (

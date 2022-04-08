@@ -31,6 +31,10 @@ export const AboutStrings = [
     }
 ]
 
+export const ContactStrings = {
+    Intro: 'Hi there! This is Fang here and I cannot be more happy to hear from you. Please feel free to send me any feedback and I\'ll get back to you ASAP.'
+}
+
 export const FooterStrings = {
     Banner: 'DESIGNED, DEVELOPED, AND MAINTAINED BY FANG XU',
     Bottom: '2022 © Fang Xu | v0.1.1'

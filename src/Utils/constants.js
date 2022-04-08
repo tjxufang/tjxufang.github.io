@@ -14,3 +14,7 @@ export const ProjectLinks = {
     Fishoal: 'https://www.fishoal.com',
     BeyooBusiness: 'https://www.beyoobeauty.com'
 }
+
+export const BannerTexts = {
+    CopyLink: "Done! Thank you for sharing!"
+}
