@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './Footer.scss'
 import {BannerTexts, SocialMediaLinks} from "Utils/constants";
-import Index from 'Components/Buttons/RedirectButton';
+import RedirectButton from 'Components/Buttons/RedirectButton';
 import {FooterStrings} from 'Utils/Strings';
 import {useDispatch} from 'react-redux';
 import {triggerBanner} from 'Redux/actions';
@@ -40,19 +40,19 @@ const Footer = () => {
                 <div className="footer-content row">
                     <div className="footer-left col">
                         <div className="footer-link-container col">
-                            <Index link={SocialMediaLinks.LinkedIn}>LinkedIn</Index>
-                            <Index link={SocialMediaLinks.GitHub}>GitHub</Index>
-                            <Index link={SocialMediaLinks.Email}>Email</Index>
+                            <RedirectButton link={SocialMediaLinks.LinkedIn}>LinkedIn</RedirectButton>
+                            <RedirectButton link={SocialMediaLinks.GitHub}>GitHub</RedirectButton>
+                            <RedirectButton link={SocialMediaLinks.Email}>Email</RedirectButton>
                             <br/>
-                            <Index isScrollingTop>Back to top</Index>
+                            <RedirectButton isScrollingTop>Back to top</RedirectButton>
                             <div onClick={handleCopyLink}>
-                                <Index isSharing disabled={isCopied}>
+                                <RedirectButton isSharing disabled={isCopied}>
                                     {!isCopied ?
                                         <>Copy Link</>
                                         :
                                         <>Copied ({counter})</>
                                     }
-                                </Index>
+                                </RedirectButton>
                             </div>
                         </div>
                     </div>

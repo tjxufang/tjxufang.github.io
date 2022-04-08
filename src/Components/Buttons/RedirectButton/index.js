@@ -6,7 +6,7 @@ const RedirectButton = ({children, link, isSharing, isScrollingTop, disabled}) =
         if (isScrollingTop) { // back to top
             window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
         } else if (isSharing) {
-            navigator.clipboard.writeText(window.location.href)
+            navigator.clipboard.writeText("https://tjxufang.github.io")
         } else {
             window.open(
                 link,

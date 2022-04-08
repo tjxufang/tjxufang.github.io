@@ -1,7 +1,7 @@
 import React from 'react';
 import 'Components/Intro/Intro.scss'
 import Typewriter from "typewriter-effect";
-import Index from 'Components/Buttons/MainButton';
+import MainButton from 'Components/Buttons/MainButton';
 import {Link} from 'react-router-dom';
 
 const Intro = () => {
@@ -40,7 +40,7 @@ const Intro = () => {
                 </div>
                 <div className="btn-container">
                     <Link to={"/about"}>
-                        <Index>Learn more about me</Index>
+                        <MainButton>Learn more about me</MainButton>
                     </Link>
                 </div>
             </div>
