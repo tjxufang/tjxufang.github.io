@@ -17,7 +17,7 @@
     .field{
       //padding: 0 15px;
       width: 100%;
-      margin: auto;
+      margin: 10px auto 15px;
       position: relative;
       input{
         border: 1px solid #DBDBDB;
@@ -32,7 +32,7 @@
       textarea{
         border: 1px solid #DBDBDB;
         background: beige;
-        height: 30vh;
+        height: 20vh;
         font-size: 20px;
         font-family: sans-serif;
         padding: 10px;
@@ -44,7 +44,6 @@
       .error-message{
         position: absolute;
         bottom: -25px;
-
         font-size: 18px;
         color: snow;
       }

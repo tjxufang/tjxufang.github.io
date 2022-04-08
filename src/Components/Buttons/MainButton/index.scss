@@ -16,6 +16,13 @@
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
+.main-button:disabled {
+  cursor: default;
+  transform: scale(1.03);
+  background-color: grey;
+  box-shadow: none;
+}
+
 .main-button:active {
   transform: scale(1.03);
 }

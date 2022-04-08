@@ -32,7 +32,15 @@ export const AboutStrings = [
 ]
 
 export const ContactStrings = {
-    Intro: 'Hi there! This is Fang here and I cannot be more happy to hear from you. Please feel free to send me any feedback and I\'ll get back to you ASAP.'
+    Intro: 'Hi there! This is Fang and I cannot be more happy to hear from you. Please feel free to send me any feedback and I\'ll get back to you ASAP.',
+    ErrorMsg: {
+        NameEmpty: 'How should I address you?',
+        NameLength: 'Ops! I think your name is too long!',
+        EmailEmpty: 'How to contact you?',
+        EmailLength: 'Ops! I think your email is too long!',
+        ContentEmpty: "Don't forget to write here!",
+        ContentLength: "Max length exceeded!"
+    }
 }
 
 export const FooterStrings = {

@@ -16,5 +16,9 @@ export const ProjectLinks = {
 }
 
 export const BannerTexts = {
-    CopyLink: "Done! Thank you for sharing!"
+    CopyLink: "Done! Thank you for sharing!",
+    SubmitSuccess: "You have submitted successfully!",
+    SubmitFail: "Network error! Please try again later."
 }
+
+export const ServerURL = "https://api.emailjs.com/api/v1.0/email"
