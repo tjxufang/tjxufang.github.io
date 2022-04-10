@@ -1,12 +1,28 @@
 import React from 'react';
 import './Homepage.scss'
-import Intro from 'Components/Intro/Intro';
+import {Link} from 'react-router-dom';
+import MainButton from 'Components/Buttons/MainButton';
+import IntroTypewriter from 'Components/IntroTypewriter';
 
 const Homepage = () => {
     return (
         <div className="homepage-container view-container">
-            <div className="homepage-intro-area">
-                <Intro/>
+            <div className="intro-container row">
+                <div className="intro-background"/>
+                <div className="intro-avatar flex-center">
+                    <img src="assets/fx.jpeg" alt="avatar"/>
+                </div>
+                <div className="intro-text">
+                    <h1>
+                        Hello there! Welcome to my page!
+                    </h1>
+                    <IntroTypewriter/>
+                    <div className="btn-container">
+                        <Link to={"/about"}>
+                            <MainButton>Learn more about me</MainButton>
+                        </Link>
+                    </div>
+                </div>
             </div>
         </div>
     );
