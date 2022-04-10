@@ -27,7 +27,7 @@
     .intro-text{
       margin: auto;
       line-height: 1.8;
-      width: 60%;
+      width: 55%;
     }
   }
 
@@ -39,6 +39,7 @@
         height: 0;
       }
       .intro-avatar{
+        margin-top: 15px;
         width: 100%;
         img{
           width: 200px;
@@ -47,6 +48,10 @@
         }
       }
       .intro-text{
+        line-height: 1.4;
+        h1{
+          font-size: 35px;
+        }
         text-align: center;
         width: 80%;
       }
