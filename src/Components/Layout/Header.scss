@@ -23,7 +23,12 @@
     padding: 0 25px;
     height: 75px;
     .company-logo{
-      align-self: center;
+      a{
+        align-self: center;
+        img{
+          margin-top: 5px;
+        }
+      }
       .company-logo-text{
         font-size: 35px;
         letter-spacing: 6px;
