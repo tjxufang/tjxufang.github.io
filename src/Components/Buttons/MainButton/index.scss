@@ -17,14 +17,21 @@
     width: 100%;
     top: 0;
     left: 0;
-    z-index: -1;
     height: 100%;
+    z-index: 0;
     img{
-      opacity: 0.8;
+      opacity: 0.55;
       object-fit: cover;
       width: 100%;
       height: 100%;
     }
+  }
+  .btn-text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
   }
 }
 
@@ -41,7 +48,7 @@
 .main-button:disabled {
   cursor: default;
   transform: scale(1.03);
-  background-color: grey;
+  opacity: 0.5;
   box-shadow: none;
 }
 

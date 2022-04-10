@@ -7,7 +7,9 @@ const MainButton = ({children, disabled, disabledText}) => {
             <div className="bg-img">
                 <img src="assets/btn-bg.png" alt="button-background"/>
             </div>
-            {disabled ? disabledText : children}
+            <div className="btn-text flex-center">
+                {disabled ? disabledText : children}
+            </div>
         </button>
     );
 };

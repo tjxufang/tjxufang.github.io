@@ -49,9 +49,7 @@ const ContactForm = () => {
                     {errors.content && errors.content.type === "maxLength" &&
                     <span className="error-message">{ContactStrings.ErrorMsg.ContentLength}</span>}
                 </div>
-                <br/>
-                <br/>
-                <div className="flex-center">
+                <div className="btn-container">
                     <MainButton type="submit" disabled={isSending} disabledText="Submitting">Submit</MainButton>
                 </div>
             </form>
