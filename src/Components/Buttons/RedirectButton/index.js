@@ -24,11 +24,11 @@ const RedirectButton = ({children, link, isSharing, isScrollingTop, disabled}) =
                         &#8599;
                     </div>
                     : isScrollingTop ?
-                        <div className="redirect-button-icon" style={{marginRight: '4px'}}>
+                        <div className="redirect-button-icon">
                             &#8593;
                         </div>
                         :
-                        <div className="redirect-button-icon" style={{marginTop: '4px'}}>
+                        <div className="redirect-button-icon">
                             &#9829;
                         </div>
                 }

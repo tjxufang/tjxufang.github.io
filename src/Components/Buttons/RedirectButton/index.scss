@@ -7,6 +7,7 @@
   cursor: pointer;
   max-width: 230px;
   .redirect-button-icon{
+    align-self: center;
     margin-left: 20px;
     font-size: 20px;
     opacity: 0;
@@ -32,6 +33,6 @@
 
 @media only screen and (max-width: 600px) {
   .redirect-button{
-    font-size: 23px;
+    font-size: 20px;
   }
 }
