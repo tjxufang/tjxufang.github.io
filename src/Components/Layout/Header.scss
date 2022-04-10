@@ -46,6 +46,7 @@
     position: relative;
     height: 200px;
     z-index: 10;
+    background-color: black;
     :first-child{
       border-top: none; // therefore in .js, <div> bg-img has to be after the first Nav Item
     }

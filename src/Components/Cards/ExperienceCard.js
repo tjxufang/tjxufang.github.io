@@ -9,9 +9,9 @@ const ExperienceCard = ({title, color, subtitle, imgSrc, children, orientation="
                 <img src={imgSrc} alt="loading"/>
             </div>
             }
-            <div className="experience-card-picture experience-card-responsive-design">
-                <img src={imgSrc} alt="loading"/>
-            </div>
+            {/*<div className="experience-card-picture experience-card-responsive-design">*/}
+            {/*    <img src={imgSrc} alt="loading"/>*/}
+            {/*</div>*/}
             <div className="experience-card-text">
                 <div className="card-heading col">
                     <h1 style={{color: color}}>{title}</h1>

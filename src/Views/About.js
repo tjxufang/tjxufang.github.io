@@ -10,7 +10,6 @@ const About = () => {
                 <ExperienceCard
                     orientation={i % 2 === 0 ? 'left' : 'right'}
                     title={item.title}
-                    color={item.color}
                     subtitle={item.subtitle}
                     imgSrc={item.imgSrc}
                     key={i}
