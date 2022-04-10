@@ -29,3 +29,9 @@
 .redirect-button:active {
   transform: scale(1.03);
 }
+
+@media only screen and (max-width: 600px) {
+  .redirect-button{
+    font-size: 23px;
+  }
+}
