@@ -6,7 +6,7 @@ import IntroTypewriter from 'Components/IntroTypewriter';
 
 const Homepage = () => {
     return (
-        <div className="homepage-container view-container">
+        <div className="homepage-container view-container flex-center">
             <div className="intro-container row">
                 <div className="intro-background"/>
                 <div className="intro-avatar flex-center">

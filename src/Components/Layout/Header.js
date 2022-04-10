@@ -39,22 +39,16 @@ const Header = () => {
                 <div className="navigation-container">
                     <NavItems viewFrom="header"/>
                 </div>
-                {/*<div className="sys-btn-container">*/}
-                {/*    <Link to={"/contact"}>*/}
-                {/*        <div className="sys-btn row">*/}
-                {/*            <img src="assets/star.svg" alt="star"/>*/}
-                {/*            <div>Shoot Your Star</div>*/}
-                {/*        </div>*/}
-                {/*    </Link>*/}
-                {/*</div>*/}
-
-                <div className="side-nav-icon">
+                <div className="side-nav-icon flex-center">
                     <span onClick={toggleNav}>&#9776;</span>
                 </div>
             </div>
             {navOpen &&
             <div className="responsive-nav col" onClick={toggleNav}>
                 <NavItems viewFrom="footer"/>
+                <div className="bg-img">
+                    <img src="assets/nav-bg.jpg" alt="nav-background"/>
+                </div>
             </div>
             }
         </div>
