@@ -48,7 +48,7 @@
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
   .footer-container{
     .footer{
       .footer-content{
@@ -57,10 +57,17 @@
           align-items: center;
         }
         .footer-right{
-          width: 40%;
+          width: 45%;
           .banner{
             font-size: 16px;
             padding: 8px;
+          }
+        }
+      }
+      .footer-bottom{
+        .footer-bottom-content{
+          p{
+            margin: 5px;
           }
         }
       }
