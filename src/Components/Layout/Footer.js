@@ -44,7 +44,7 @@ const Footer = () => {
                             <RedirectButton link={SocialMediaLinks.GitHub}>GitHub</RedirectButton>
                             <RedirectButton link={SocialMediaLinks.Email}>Email</RedirectButton>
                             <br/>
-                            <RedirectButton isScrollingTop>Back to top</RedirectButton>
+                            <RedirectButton isScrollingTop>Back to Top</RedirectButton>
                             <div onClick={handleCopyLink}>
                                 <RedirectButton isSharing disabled={isCopied}>
                                     {!isCopied ?
