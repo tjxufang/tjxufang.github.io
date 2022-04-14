@@ -10,13 +10,19 @@
         text-align: center;
       }
     }
+    .basic-contact{
+      .field{
+        width: 48%;
+        margin: 10px 0 15px 0;
+      }
+    }
     .field{
       width: 100%;
       margin: 10px auto 15px;
       position: relative;
       input{
         border: 1px solid #DBDBDB;
-        width: 90%;
+        width: calc(100% - 12px);
         height: 40px;
         font-size: 20px;
         padding: 0 5px;
@@ -32,7 +38,7 @@
         padding: 5px;
         resize: none;
         outline: none;
-        width: 95%;
+        //width: 95%;
         //margin: auto;
       }
       .error-message{
@@ -48,15 +54,15 @@
 @media only screen and (max-width: 550px) {
   .contact-form-container{
     .contact-form{
-      .field{
-        margin-top: 10px;
-        input{
-          width: 95%;
+      .basic-contact{
+        flex-direction: column;
+        .field{
+          width: 100%;
         }
       }
+      .field{
+        margin-top: 10px;
+      }
     }
-  }
-  .basic-contact{
-    flex-direction: column;
   }
 }
