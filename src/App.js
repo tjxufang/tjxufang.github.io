@@ -1,6 +1,6 @@
 import './App.css';
 import ScrollToTop from 'Utils/ScrollToTop';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import {BrowserRouter, HashRouter, Route, Switch} from 'react-router-dom';
 import {CSSTransition, TransitionGroup} from 'react-transition-group';
 import Header from 'Components/Layout/Header';
 import Footer from 'Components/Layout/Footer';
@@ -26,7 +26,7 @@ function App() {
 
     return (
         <div className="App">
-            <BrowserRouter>
+            <HashRouter basename="/">
                 <ScrollToTop/>
                 <Header/>
                 <Route render={({location}) => (
@@ -45,7 +45,7 @@ function App() {
                     </TransitionGroup>
                 )}/>
                 <Footer/>
-            </BrowserRouter>
+            </HashRouter>
         </div>
     );
 }
