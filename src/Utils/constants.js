@@ -1,4 +1,4 @@
-export const isProdEnv = process.env.NODE_ENV
+export const isProdEnv = process.env.NODE_ENV === 'production'
 
 export const LocalStorageItems = {
     Token : "token",
