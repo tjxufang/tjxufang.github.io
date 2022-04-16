@@ -1,6 +1,6 @@
 import './App.css';
 import ScrollToTop from 'Utils/ScrollToTop';
-import {BrowserRouter, HashRouter, Route, Switch} from 'react-router-dom';
+import {HashRouter, Route, Switch} from 'react-router-dom';
 import {CSSTransition, TransitionGroup} from 'react-transition-group';
 import Header from 'Components/Layout/Header';
 import Footer from 'Components/Layout/Footer';
