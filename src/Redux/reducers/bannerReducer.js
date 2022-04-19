@@ -1,15 +1,16 @@
-import {BannerActionTypes} from "Redux/actions/bannerActions";
+import { BannerActionTypes } from 'Redux/actions/bannerActions';
 
 const initialState = {
-    banner: undefined,
-}
+  banner: undefined,
+};
 
+// eslint-disable-next-line import/prefer-default-export,default-param-last
 export const bannerReducer = (state = initialState, action) => {
-    const {type, payload} = action
-    switch (type) {
-        case BannerActionTypes.TriggerBanner:
-            return {banner: payload}
-        default:
-            return state
-    }
-}
+  const { type, payload } = action;
+  switch (type) {
+    case BannerActionTypes.TriggerBanner:
+      return { banner: payload };
+    default:
+      return state;
+  }
+};
