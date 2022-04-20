@@ -8,15 +8,15 @@ The project was created to be my personal webpage and for those who want to know
 
 Link to my website: https://tjxufang.github.io
 
-### Notable Packages Used in Project
-#### Coming soon...
-
-
-
-
-
-
-
+### Notable Third-party Packages Used in Project
+#### 1. axios: for sending requests to email.js
+#### 2. gh-pages: for deployment to GitHub Pages
+#### 3. notistack: for top notification banner
+#### 4. prop-types: for type checks of each component
+#### 5. react-transition-group: for transition animation between pages
+#### 6. typewriter-effect: for a typing effect in some components
+#### 7. sass: all UI designs (except for notification banner) are made using vanilla SCSS
+#### 8. eslint: for coding conventions
 
 ## Available Scripts to Run The Project
 In the project directory, you can run:
