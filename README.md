@@ -4,7 +4,7 @@ The project was created to be my personal webpage and for those who want to know
 
 Link to my website: https://tjxufang.github.io
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) with Node version 16.13.1.
 
 ## Notable Third-party Packages Used in Project
 #### 1. axios: for sending requests to email.js
