@@ -13,7 +13,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 #### 4. prop-types: for type checks of each component
 #### 5. react-transition-group: for transition animation between pages
 #### 6. typewriter-effect: for a typing effect in some components
-#### 7. sass: all UI designs (except for notification banner) are made using vanilla SCSS
+#### 7. sass: all design elements and UI components (except for notification banner) are made using vanilla SCSS without any UI framework
 #### 8. eslint: for coding conventions
 
 ## Available Scripts to Run The Project
