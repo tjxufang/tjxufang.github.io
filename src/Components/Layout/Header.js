@@ -26,12 +26,12 @@ function Header() {
       style={{ height: navOpen && '275px' }}
     >
       <div className="thumbnail">
-        <img src="/assets/fx-logo.png" alt="thumbnail" />
+        <img src={`${process.env.PUBLIC_URL}/assets/fx-logo.png`} alt="thumbnail" />
       </div>
       <div className="header row">
         <div className="company-logo row">
           <Link to="/">
-            <img src="/assets/fx-logo-dark.png" alt="logo" width="50px" />
+            <img src={`${process.env.PUBLIC_URL}/assets/fx-logo-dark.png`} alt="logo" width="50px" />
           </Link>
           <div className="company-logo-text flex-center">
             Fang Xu
@@ -40,20 +40,18 @@ function Header() {
         <div className="navigation-container">
           <NavItems viewFrom="header" />
         </div>
-        <div className="side-nav-icon flex-center">
-          {/* eslint-disable-next-line max-len */}
-          {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-static-element-interactions */}
-          <span onClick={toggleNav}>&#9776;</span>
+        <div className="side-nav-icon">
+          <button className="btn-transparent" type="button" onClick={toggleNav}>
+            &#9776;
+          </button>
         </div>
       </div>
       {navOpen
       && (
-        // eslint-disable-next-line max-len
-        // eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-static-element-interactions
-        <div className="responsive-nav col" onClick={toggleNav}>
-          <NavItems viewFrom="footer" />
+        <div className="responsive-nav col">
+          <NavItems viewFrom="footer" onClick={toggleNav} />
           <div className="bg-img">
-            <img src="assets/nav-bg.jpg" alt="nav-background" />
+            <img src={`${process.env.PUBLIC_URL}assets/nav-bg.jpg`} alt="nav-background" />
           </div>
         </div>
       )}

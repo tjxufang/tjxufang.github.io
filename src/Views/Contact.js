@@ -7,7 +7,7 @@ function Contact() {
     <div className="contact-container view-container">
       <div className="contact">
         <div className="contact-avatar flex-center">
-          <img src="assets/fx.jpeg" alt="avatar" />
+          <img src={`${process.env.PUBLIC_URL}assets/fx.jpeg`} alt="avatar" />
         </div>
         <div>
           <ContactForm />

@@ -9,7 +9,7 @@ function MainButton({
     // eslint-disable-next-line react/button-has-type
     <button type={type} className="main-button" disabled={disabled}>
       <div className="bg-img">
-        <img src="assets/btn-bg.png" alt="button-background" />
+        <img src={`${process.env.PUBLIC_URL}assets/btn-bg.png`} alt="button-background" />
       </div>
       <div className="btn-text flex-center">
         {disabled ? disabledText : children}

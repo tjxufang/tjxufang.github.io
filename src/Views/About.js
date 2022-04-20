@@ -16,8 +16,7 @@ function About() {
           title={item.title}
           subtitle={item.subtitle}
           imgSrc={item.imgSrc}
-          // eslint-disable-next-line react/no-array-index-key
-          key={i}
+          key={item.title}
         >
           {item.detail}
         </ExperienceCard>

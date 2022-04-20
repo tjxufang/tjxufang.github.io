@@ -10,7 +10,7 @@ function Homepage() {
       <div className="intro-container row">
         <div className="intro-background" />
         <div className="intro-avatar flex-center">
-          <img src="assets/fx.jpeg" alt="avatar" />
+          <img src={`${process.env.PUBLIC_URL}assets/fx.jpeg`} alt="avatar" />
         </div>
         <div className="intro-text">
           <h1>

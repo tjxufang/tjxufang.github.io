@@ -1,0 +1,9 @@
+.link-on{
+  span{
+    background: linear-gradient(to left, rgb(246, 158, 196), rgb(249, 221, 148) 100%) 0 100% / 100% 2px repeat-x;
+    transition: all 200ms linear;
+  }
+}
+.link-off{
+  background: none;
+}
