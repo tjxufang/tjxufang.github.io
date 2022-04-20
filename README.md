@@ -1,14 +1,12 @@
 # Hello! Welcome to the repo of my website
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 #### Version 1
-
-## Purposes
-The project was created to be my personal webpage and for those who want to know more about me.
+The project was created to be my personal webpage and for those who want to know a bit more about me.
 
 Link to my website: https://tjxufang.github.io
 
-### Notable Third-party Packages Used in Project
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Notable Third-party Packages Used in Project
 #### 1. axios: for sending requests to email.js
 #### 2. gh-pages: for deployment to GitHub Pages
 #### 3. notistack: for top notification banner
