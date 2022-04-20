@@ -8,8 +8,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Notable Third-party Packages Used in Project
 #### 1. axios: for sending requests to email.js
-#### 2. gh-pages: for deployment to GitHub Pages
-#### 3. notistack: for top notification banner
+#### 2. gh-pages: CLI for deployment to GitHub Pages
+#### 3. notistack: UI component for top notification banner
 #### 4. prop-types: for type checks of each component
 #### 5. react-transition-group: for transition animation between pages
 #### 6. typewriter-effect: for a typing effect in some components
