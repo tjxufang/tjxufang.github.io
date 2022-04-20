@@ -23,8 +23,8 @@ module.exports = {
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     'react/jsx-props-no-spreading': 'off',
   },
-  settings: { // for absolute import path
-    'import/resolver': {
+  settings: {
+    'import/resolver': { // for absolute import path
       node: {
         paths: ['src'],
       },

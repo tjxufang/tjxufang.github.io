@@ -32,9 +32,9 @@
       object-fit: cover;
     }
   }
-  .experience-card-responsive-design{
-    display: none;
-  }
+  //.experience-card-responsive-design{
+  //  display: none;
+  //}
 }
 
 .experience-card-container:hover{
@@ -71,8 +71,8 @@
       opacity: 0.3;
       filter: blur(2px);
     }
-    .experience-card-responsive-design{
-      display: block;
-    }
+    //.experience-card-responsive-design{
+    //  display: block;
+    //}
   }
 }

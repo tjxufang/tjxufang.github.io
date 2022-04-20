@@ -3,43 +3,37 @@ import './index.scss';
 import PropTypes from 'prop-types';
 
 function RedirectButton({
-  children, link, isSharing, isScrollingTop, disabled,
+  children, type, link, disabled, disabledText,
 }) {
-  const onClick = () => {
-    if (isScrollingTop) { // back to top
-      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-    } else if (isSharing) {
-      navigator.clipboard.writeText('https://tjxufang.github.io');
-    } else {
-      window.open(
-        link,
-        '_blank',
-      );
+  const onClick = (btnType) => {
+    switch (btnType) { // back to top
+      case 'scroll':
+        return () => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+      case 'copy':
+        return () => navigator.clipboard.writeText('https://tjxufang.github.io');
+      default:
+        return () => window.open(link, '_blank');
+    }
+  };
+
+  const handleTypes = (btnType) => {
+    switch (btnType) {
+      case 'copy':
+        return <span>&#9829;</span>;
+      case 'scroll':
+        return <span>&#8593;</span>;
+      default: // 'link'
+        return <span>&#8599;</span>;
     }
   };
 
   return (
-    <button type="button" className="redirect-button" onClick={onClick} disabled={disabled}>
+    <button type="button" className="redirect-button" onClick={onClick(type)} disabled={disabled}>
       <div className="row">
-        {children}
-        {/* eslint-disable-next-line no-nested-ternary */}
-        {link
-          ? (
-            <div className="redirect-button-icon">
-              &#8599;
-            </div>
-          )
-          : isScrollingTop
-            ? (
-              <div className="redirect-button-icon">
-                &#8593;
-              </div>
-            )
-            : (
-              <div className="redirect-button-icon">
-                &#9829;
-              </div>
-            )}
+        {disabled ? disabledText : children}
+        <div className="redirect-button-icon">
+          {handleTypes(type)}
+        </div>
       </div>
     </button>
   );
@@ -48,14 +42,13 @@ function RedirectButton({
 export default RedirectButton;
 RedirectButton.defaultProps = {
   link: null,
-  isSharing: false,
-  isScrollingTop: false,
   disabled: false,
+  disabledText: null,
 };
 RedirectButton.propTypes = {
   children: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
   link: PropTypes.string,
-  isSharing: PropTypes.bool,
-  isScrollingTop: PropTypes.bool,
   disabled: PropTypes.bool,
+  disabledText: PropTypes.string,
 };

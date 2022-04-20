@@ -39,24 +39,14 @@ function Footer() {
         <div className="footer-content row">
           <div className="footer-left col">
             <div className="footer-link-container col">
-              <RedirectButton link={SocialMediaLinks.LinkedIn}>LinkedIn</RedirectButton>
-              <RedirectButton link={SocialMediaLinks.GitHub}>GitHub</RedirectButton>
-              <RedirectButton link={SocialMediaLinks.Email}>Email</RedirectButton>
+              <RedirectButton type="link" link={SocialMediaLinks.LinkedIn}>LinkedIn</RedirectButton>
+              <RedirectButton type="link" link={SocialMediaLinks.GitHub}>GitHub</RedirectButton>
+              <RedirectButton type="link" link={SocialMediaLinks.Email}>Email</RedirectButton>
               <br />
-              <RedirectButton isScrollingTop>Back to Top</RedirectButton>
-              {/* eslint-disable-next-line max-len */}
-              {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-static-element-interactions */}
-              <div onClick={handleCopyLink}>
-                <RedirectButton isSharing disabled={isCopied}>
-                  {!isCopied
-                    ? <>Copy Link</>
-                    : (
-                      <>
-                        Copied (
-                        {counter}
-                        )
-                      </>
-                    )}
+              <RedirectButton type="scroll">Back to Top</RedirectButton>
+              <div onClick={handleCopyLink} onKeyDown={handleCopyLink} role="button" tabIndex={0}>
+                <RedirectButton type="copy" disabled={isCopied} disabledText={`Copied ${counter}`}>
+                  Copy Link
                 </RedirectButton>
               </div>
             </div>

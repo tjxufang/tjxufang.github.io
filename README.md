@@ -1,7 +1,7 @@
 # Hello! Welcome to the repo of my website
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-#### Version: 1.0.0
+#### Version 1
 
 ## Purposes
 The project was created to be my personal webpage and for those who want to know more about me.

@@ -20,9 +20,8 @@ function ExperienceCard({
           <h1 style={{ color }}>{title}</h1>
           <h3>{subtitle}</h3>
         </div>
-        {children?.map((para, i) => (
-          // eslint-disable-next-line react/no-array-index-key
-          <div className="card-content" key={i}>
+        {children?.map((para) => (
+          <div className="card-content" key={para.slice(0, 3)}>
             {para}
           </div>
         ))}
@@ -42,7 +41,7 @@ ExperienceCard.defaultProps = {
   orientation: 'right',
 };
 ExperienceCard.propTypes = {
-  children: PropTypes.string.isRequired,
+  children: PropTypes.arrayOf(PropTypes.string).isRequired,
   title: PropTypes.string.isRequired,
   color: PropTypes.string,
   subtitle: PropTypes.string.isRequired,
