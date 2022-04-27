@@ -18,7 +18,7 @@ function IntroTypewriter() {
             .pauseFor(500)
             .typeString('I am a <strong>full-stack developer</strong>. ')
             .pauseFor(500)
-            .typeString('I am into <strong>music</strong> and great <strong>designs</strong>, ')
+            .typeString('I am into <strong>music</strong>, <strong>cars</strong>, <strong>cooking</strong> and great <strong>designs</strong>, ')
           // .deleteChars(9)
           // .typeString("UX designer")
             .pauseFor(500)
