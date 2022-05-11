@@ -9,7 +9,7 @@ import About from 'Views/About';
 import Contact from 'Views/Contact';
 import { useSelector } from 'react-redux';
 import { useSnackbar } from 'notistack';
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 
 function App() {
   // detecting warning banner
@@ -22,7 +22,7 @@ function App() {
   }, [banner, enqueueSnackbar]);
 
   // to get rid of the useRef warning in strict mode
-  const nodeRef = useRef(null);
+  // const nodeRef = useRef(null); // this will disable CSSTransition
 
   return (
     <div className="App">
@@ -32,8 +32,7 @@ function App() {
         <Route render={({ location }) => (
           <TransitionGroup>
             <CSSTransition
-              nodeRef={nodeRef}
-              key={location.key}
+              key={location.pathname}
               classNames="fade"
               timeout={500}
             >

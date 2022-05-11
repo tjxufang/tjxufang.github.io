@@ -28,7 +28,6 @@ ReactDOM.render(
           vertical: 'top',
           horizontal: 'center',
         }}
-                // TransitionComponent={Slide}
         preventDuplicate
         disableWindowBlurListener
       >
