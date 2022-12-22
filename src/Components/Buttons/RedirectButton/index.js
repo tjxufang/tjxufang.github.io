@@ -6,8 +6,8 @@ function RedirectButton({
   children, type, link, disabled, disabledText,
 }) {
   const onClick = (btnType) => {
-    switch (btnType) { // back to top
-      case 'scroll':
+    switch (btnType) {
+      case 'scroll': // back to top btn
         return () => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
       case 'copy':
         return () => navigator.clipboard.writeText('https://tjxufang.github.io');

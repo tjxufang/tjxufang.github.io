@@ -41,7 +41,6 @@ function Footer() {
             <div className="footer-link-container col">
               <RedirectButton type="link" link={SocialMediaLinks.LinkedIn}>LinkedIn</RedirectButton>
               <RedirectButton type="link" link={SocialMediaLinks.GitHub}>GitHub</RedirectButton>
-              <RedirectButton type="link" link={SocialMediaLinks.Email}>Email</RedirectButton>
               <br />
               <RedirectButton type="scroll">Back to Top</RedirectButton>
               <div onClick={handleCopyLink} onKeyDown={handleCopyLink} role="button" tabIndex={0}>
