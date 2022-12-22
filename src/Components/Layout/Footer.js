@@ -5,6 +5,7 @@ import RedirectButton from 'Components/Buttons/RedirectButton';
 import { FooterStrings } from 'Utils/Strings';
 import { useDispatch } from 'react-redux';
 import { triggerBanner } from 'Redux/actions';
+import packageJSON from '../../../package.json';
 
 function Footer() {
   const dispatch = useDispatch();
@@ -58,7 +59,10 @@ function Footer() {
         </div>
         <div className="footer-bottom">
           <div className="footer-bottom-content">
-            <p>{FooterStrings.Bottom}</p>
+            <p>
+              {FooterStrings.Bottom}
+              {packageJSON.version}
+            </p>
           </div>
         </div>
       </div>

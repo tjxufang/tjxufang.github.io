@@ -42,5 +42,5 @@ export const ContactStrings = {
 
 export const FooterStrings = {
   Banner: 'DESIGNED, DEVELOPED, AND MAINTAINED BY FANG XU',
-  Bottom: '2022 © Fang Xu | v1.1.0',
+  Bottom: '2022 © Fang Xu | ',
 };
