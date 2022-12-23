@@ -22,8 +22,8 @@ export const AboutStrings = [
     subtitle: '2020-Present',
     imgSrc: 'assets/about/Profession.jpg',
     detail: [
-      'I worked as a full-stack developer at Mark2Win and was responsible to develop web applications using the React framework based on our customers’ requirements. Our customers are in a variety of industries, such as, e-commerce, educational institutions, and law firms.',
-      'Then, after that, I decided to join a start-up tech company Infinomial, to truly utilize what I learned from my previous project experience. I have also become the frontend team lead and was provided with the opportunity to develop independently, and to build my leadership by leading the team to develop apps in a larger scale.',
+      'I have been working as a web developer at different tech companies and was responsible to develop web applications using the React framework based on our customers’ requirements.',
+      'Please check out my LinkedIn profile for more information.',
     ],
   },
 ];
