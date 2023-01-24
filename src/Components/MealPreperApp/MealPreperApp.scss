@@ -1,0 +1,9 @@
+.meal-preper-app-container {
+  margin: 50px;
+}
+
+@media only screen and (max-width: 550px) {
+  .meal-preper-app-container {
+    margin: 0;
+  }
+}

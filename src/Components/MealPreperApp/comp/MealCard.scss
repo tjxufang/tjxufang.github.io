@@ -1,0 +1,26 @@
+.meal-card-container {
+  max-width: 400px;
+  font-family: 'ZCOOL XiaoWei', sans-serif;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  background-size: cover;
+
+  &>div {
+    margin-bottom: 30px;
+  }
+
+  .meal-card-name {
+    text-align: center;
+  }
+
+  .meal-card-preparations {
+    .meal-card-preparations-content {
+      justify-content: center;
+    }
+  }
+
+  .meal-card-steps {
+
+  }
+}

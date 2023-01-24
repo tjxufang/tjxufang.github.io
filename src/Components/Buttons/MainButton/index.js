@@ -6,6 +6,7 @@ function MainButton({
   children, type = 'button', disabled, disabledText,
 }) {
   return (
+    // todo: eslint
     // eslint-disable-next-line react/button-has-type
     <button type={type} className="main-button" disabled={disabled}>
       <div className="bg-img">

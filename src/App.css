@@ -5,40 +5,67 @@
   /*cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.png"), auto;*/
 }
 
-a{
+/*Font Sizes*/
+h1 {
+  font-size: 36px;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+}
+h2 {
+  font-size: 32px;
+  /*font-weight: 600;*/
+  /*margin-block-start: 0.83em;*/
+  margin-top: 0.53em;
+  /*margin-block-end: 0.83em;*/
+  margin-bottom: 0.53em;
+  /*margin-inline-start: 0;*/
+  /*margin-inline-end: 0;*/
+}
+h3 {
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0;
+}
+
+/*Global Configuration*/
+
+a {
   text-decoration: none;
 }
 
-.btn-transparent{
+.btn-transparent {
   background: none;
   border: none;
 }
 
-.view-container{
+.view-container {
   max-width: 1300px;
   min-height: calc(100vh - 300px);
   margin: 0 auto;
 }
 
-.col{
+.col {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
-.row{
+.row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.flex-center{
+.flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-.btn-container{
+.btn-container {
   width: 100%;
   margin: 40px auto;
 }
