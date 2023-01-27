@@ -8,6 +8,7 @@ import Homepage from 'Views/Homepage';
 import About from 'Views/About';
 import Contact from 'Views/Contact';
 import MealPreper from 'Views/MealPreper';
+import NotFoundPage from 'Views/NotFoundPage';
 import { useSelector } from 'react-redux';
 import { useSnackbar } from 'notistack';
 import React, { useEffect } from 'react';
@@ -42,6 +43,7 @@ function App() {
                 <Route path="/about" exact component={About} />
                 <Route path="/contact" exact component={Contact} />
                 <Route path="/mealpreper" exact component={MealPreper} />
+                <Route path="*" component={NotFoundPage} />
               </Switch>
             </CSSTransition>
           </TransitionGroup>
